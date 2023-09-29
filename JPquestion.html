@@ -1,0 +1,136 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <!-- <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+        
+                #quiz-container {
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+        
+                .question {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+        
+                .options {
+                    list-style-type: none;
+                    padding: 0;
+                }
+        
+                .options li {
+                    margin-bottom: 5px;
+                }
+        
+                .result {
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="quiz-container">
+                <div class="question"></div>
+                <ul class="options"></ul>
+                <button id="next-button">Next</button>
+                <div class="result"></div>
+            </div>
+        
+            <script>
+                const questions = [
+                    {
+                        question: "What is the capital of France?",
+                        options: ["Paris", "Berlin", "Madrid", "Rome"],
+                        correctAnswer: "Paris"
+                    },
+                    {
+                        question: "Which planet is known as the Red Planet?",
+                        options: ["Earth", "Mars", "Venus", "Jupiter"],
+                        correctAnswer: "Mars"
+                    },
+                    {
+                        question: "What is the largest mammal in the world?",
+                        options: ["Elephant", "Giraffe", "Blue Whale", "Hippopotamus"],
+                        correctAnswer: "Blue Whale"
+                    }
+                ];
+        
+                let IndexNo = 1;
+                let score = 0;
+        
+                const questionElement = document.querySelector(".question");
+                const optionsElement = document.querySelector(".options");
+                const nextButton = document.getElementById("next-button");
+                const resultElement = document.querySelector(".result");
+
+        
+                function showQuestion() {
+                    questionElement.innerHTML = questions[indexNo].question;
+                    
+                    for(const i=0; i <question[indexNo].options.length; i++) {
+                        const correctAns = questions[indexNo].correctAnswer;
+                        const option = questions[indexNo].options[i];
+                    
+                    //questionElement.textContent = question.question;
+                    }
+                    const options = question.options;
+                    optionsElement.innerHTML = "";
+        
+                    // for (const option of options) {
+                    //     const li = document.createElement("li");
+                    //     li.textContent = option;
+                    //     li.addEventListener("click", () => checkAnswer(option));
+                    //     optionsElement.appendChild(li);
+                    // }
+                }
+        
+                function checkAnswer(selectedOption) {
+                    const correctOption = questions[currentQuestionIndex].correctAnswer;
+        
+                    if (selectedOption === correctOption) {
+                        score++;
+                    }
+        
+                    currentQuestionIndex++;
+        
+                    if (currentQuestionIndex < questions.length) {
+                        showQuestion(currentQuestionIndex);
+                    } else {
+                        showResult();
+                    }
+                }
+        
+                function showResult() {
+                    questionElement.textContent = "";
+                    optionsElement.innerHTML = "";
+                    nextButton.style.display = "none";
+                    resultElement.textContent = `You scored ${score} out of ${questions.length}`;
+                }
+        
+                nextButton.addEventListener("click", () => showQuestion(currentQuestionIndex));
+        
+                showQuestion(currentQuestionIndex);
+            </script>
+        </body>
+        </html>
+        This code creates a simple quiz app with three questions. You can customize the questions, options, and correct answers as needed. The app displays one question at a time and calculates the user's score. It also shows the final score at the end. You can expand and enhance this app by adding more questions, a timer, and additional features as desired.
+        
+         -->
+        
+        
+        
+        
+        </body>
+
+        <script src="JPquestions.js"></script>
+        </html>
